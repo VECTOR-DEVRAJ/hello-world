@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    
+    <link rel="stylesheet" href="st.css">
+    <link rel="stylesheet" href="sst.css">
+    <link rel="stylesheet" href="stylesheet.css">
+    <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+</head>
+<body>
+    <div id="mySidenav" class="sidenav">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <a href="#">About</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+      </div>
+
+      <div id="main">
+         <h2>Sidenav Push Example</h2>
+         <!-- <p>Click on the element below to open the side navigation menu, and push this content to the right. Notice that we add a black see-through background-color to body when the sidenav is opened.</p>  -->
+        <span style="font-size:30px;cursor:pointer" onclick="openNav()">&#9776; open</span>
+      </div>
+
+      <script>
+        function openNav() {
+          document.getElementById("mySidenav").style.width = "250px";
+          document.getElementById("main").style.marginLeft = "250px";
+          document.body.style.backgroundColor = "rgba(0,0,0,0.4)";
+        }
+        
+        function closeNav() {
+          document.getElementById("mySidenav").style.width = "0";
+          document.getElementById("main").style.marginLeft= "0";
+          document.body.style.backgroundColor = "white";
+        }
+        </script>
+      
+      <div id="main">
+    <header class="header">
+        <a href="#" class="logo">Portfolio</a>
+
+        <nav class="navbar">
+            <a href="#" style="--i:1"class="active">Home</a>
+            <a href="#" style="--i:2">About</a>
+            <a href="#" style="--i:3">Skill</a>
+            <a href="#" style="--i:4">Portfolio</a>
+            <a href="#" style="--i:5">Contact</a>
+            
+        </nav>
+
+    </header>
+    
+       
+    <section class="home"  >
+       
+        
+        <div class="home-content">
+            
+            <div class="menu__container">
+                <div class="menu"><img src="panda3.avif" width="200"></div>
+              </div>
+            
+            <!-- <div class="forca">
+            <img src= "panda2.webp" style="width: 200px;" >
+            </div> -->
+            <h3>Hello, It's Me</h3>
+            <h1>Devraj Karan</h1>
+            <h3>And I'm a <span class="text"></span></h3>
+            <p>I'm a B.Tech student at IIIT ALLAHABAD.<br>expertise is to create website design, Frontend design, and many more.....</p>
+    
+                
+            <div class="home-sci">
+                <a href="#" style="--i:7"><i class='bx bxl-facebook' ></i></a>
+                <a href="#" style="--i:8"><i class='bx bxl-instagram' ></i></a>
+                <a href="#" style="--i:9"><i class='bx bxl-whatsapp' ></i></a>
+                <a href="#" style="--i:10"><i class='bx bxl-tiktok'></i></a>
+            </div>
+
+            <a href="#" class="btn-box">More about me</a>
+        
+        </div>
+    </section>
+    
+    
+    <section>
+
+    <section class="about" class="home" id="about">
+        <div class="about-img">
+            <img src="panda.jpg" width="20" height="20">
+        </div> 
+        <div class="about-text">
+            <h2>About<span>Me</span></h2>
+            <h4>Full Stack Developer!</h4>
+            <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Deserunt necessitatibus dolor, quam quos reiciendis repellendus dignissimos consequuntur delectus, quaerat numquam dolores porro eveniet inventore! Sed fuga aspernatur sint asperiores obcaecati.</p>
+            <a href="" class="btn-box">More About Me</a>
+        </div>
+
+    </section>
+
+    <section>
+        <div class="services" id="services">
+            <div class="container">
+                <h1 class="sub-title">My<span>Services</span></h1>
+                <div class="service-list">
+                    <div>
+                        <i class='bx bx-code-alt' style='color:#00ff00' ></i>                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt non consequatur placeat a porro commodi ab cupiditate unde corrupti distinctio debitis id dolor qui, sed maiores eos, blanditiis eaque nihil.</p>
+                        <a href="#" class="read">Learn more</a>
+                    </div>
+                    <div>
+                        <i class='bx bx-crop' style='color:#00ff00' ></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt non consequatur placeat a porro commodi ab cupiditate unde corrupti distinctio debitis id dolor qui, sed maiores eos, blanditiis eaque nihil.</p>
+                        <a href="#" class="read">Learn more</a>
+                    </div>
+                    <div>
+                        <i class='bx bxl-apple' style='color:#00ff00' ></i>
+                        <h2>UI/UX Design</h2>
+                        <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Incidunt non consequatur placeat a porro commodi ab cupiditate unde corrupti distinctio debitis id dolor qui, sed maiores eos, blanditiis eaque nihil.</p>
+                        <a href="#" class="read">Learn more</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <h1 class="sub-title">My<span>Skills</span></h1>
+
+    <section>
+        <div class="container" id="Skills">
+            <h1 class="heading1">Technical Skills</h1>
+            <div class="Technical-bars">
+                <div class="bar">
+                    <div class="info">
+                        <span>HTML</span>
+                    </div>
+                    <div class="progress-line html">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>CSS</span>
+                    </div>
+                    <div class="progress-line css">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>Javascript</span>
+                    </div>
+                    <div class="progress-line javascript">
+                        <span></span>
+                    </div>
+                </div>
+                <div class="bar">
+                    <div class="info">
+                        <span>Python</span>
+                    </div>
+                    <div class="progress-line python">
+                        <span></span>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+
+    </section>
+    <script src="main.js"></script>
+</body>
+</html>
